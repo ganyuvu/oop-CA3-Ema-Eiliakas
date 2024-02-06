@@ -12,7 +12,6 @@ public class CA3_Question2
 
      */
     public static int[][]  floodFillStart() {
-        Scanner kb = new Scanner(System.in);
         int[][] arr = new int[10][10];
         for (int x = 0; x < 10; x++)
         {
@@ -42,7 +41,7 @@ public class CA3_Question2
         Stack<Point> stack = new Stack<>(); //stack to store coordinates
         stack.push(new Point(r,c)); //pushing starting point provided by user, onto the stack
 
-        int fill = 1; // starts with 1 to keep cells in numerical order when filled
+        int fill = 0; // starts with 1 to keep cells in numerical order when filled
 
         //looping until stack is empty
         while (!stack.isEmpty())
