@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 /**
- *  Name:
+ *  Name: Ema Eiliakas
  *  Class Group: GD2a
  */
 
