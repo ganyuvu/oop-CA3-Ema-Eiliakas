@@ -4,6 +4,7 @@ import java.util.*;
 /**
  *  Name:Ema Eiliakas
  *  Class Group: GD2a
+ *  looked at https://www.w3schools.com/java/java_hashmap.asp when using hashmaps
  */
 
 public class CA3_Question3 {
