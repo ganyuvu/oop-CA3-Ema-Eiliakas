@@ -59,18 +59,18 @@ public class CA3_Question6
 
                     //getting the current quantity and price of the current block
                     int boughtQty = currentShares.getQuantity();
-                    double sellPrice = currentShares.getPrice();
+                    double boughtPrice = currentShares.getPrice();
 
                     if (qty == boughtQty)
                     {
                         //if the quantity the user inputed is equal to the entire block, then sells everything in one go
-                        profit += boughtQty * (price - sellPrice);
+                        profit += boughtQty * (price - boughtPrice);
                         shares.remove();
                     }
                     else if(qty < boughtQty)
                     {
                         //if the quantity the user inputed is less than the entire block, then sell the shares in parts
-                        profit += qty * (price - sellPrice);
+                        profit += qty * (price - boughtPrice);
                         currentShares.setQuantity(boughtQty - qty); //updates the current shares to the remainder
                         qty = 0; //sets quantity back to zero so it doesnt stack
                     }
